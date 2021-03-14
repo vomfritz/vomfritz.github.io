@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title></title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Pflanzen , Samen, Tiernahrung, Speck und vieles mehr.</description>
+	<lastBuildDate>Sun, 24 Mar 2019 12:08:29 +0000</lastBuildDate>
+	<language>de-DE</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2019/03/cropped-webicon-32x32.jpg</url>
+	<title></title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Willkommen!</title>
+		<link>/willkommen/</link>
+					<comments>/willkommen/#respond</comments>
+		
+		<dc:creator><![CDATA[Bianca Karr-Sajtarevic]]></dc:creator>
+		<pubDate>Sun, 24 Mar 2019 12:08:29 +0000</pubDate>
+				<category><![CDATA[Allgemein]]></category>
+		<guid isPermaLink="false">/?p=67</guid>
+
+					<description><![CDATA[Schön, dass Sie den Weg zu uns gefunden haben. In unserem Geschäft am Linzer Südbahnhof-Markt bekommen Sie Samen, Pflanzen, Vogelfutter, Hundenahrung und Speck&#8230; alles frisch &#8222;vom Fritz&#8220;. Wir würden uns freuen, Sie bald bei uns am Markt begrüßen zu dürfen.]]></description>
+										<content:encoded><![CDATA[
+<p>Schön, dass Sie den Weg zu uns gefunden haben. In unserem Geschäft am Linzer Südbahnhof-Markt bekommen Sie Samen, Pflanzen, Vogelfutter, Hundenahrung und Speck&#8230; alles frisch <strong>&#8222;vom Fritz&#8220;</strong>. Wir würden uns freuen, Sie bald bei uns am Markt begrüßen zu dürfen. </p>
+
+
+
+<figure class="wp-block-image"><img loading="lazy" width="1024" height="683" src="/wp-content/uploads/2019/03/IMG_1021-1024x683.jpg" alt="" class="wp-image-68" srcset="/wp-content/uploads/2019/03/IMG_1021-1024x683.jpg 1024w, /wp-content/uploads/2019/03/IMG_1021-300x200.jpg 300w, /wp-content/uploads/2019/03/IMG_1021-768x512.jpg 768w" sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></figure>
+]]></content:encoded>
+					
+					<wfw:commentRss>/willkommen/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

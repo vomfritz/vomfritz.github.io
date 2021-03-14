@@ -1,0 +1,397 @@
+/*
+Theme Name: Delect
+Theme URI: https://www.childthemestyles.com/delect/
+Author: Child Theme Styles
+Author URI: https://www.childthemestyles.com
+Template:  twentyseventeen
+Description: Delect is a child theme for the default WordPress theme called Twenty Seventeen. Delect brings your site to life with the capability of immersing you into video action or if you prefer, featuring amazing poster images that gives you brilliance. With a focus on blogging sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Delect is also ready for translating your site into many languages.
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: delect
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* add site title background colour */
+.site-branding-text {
+    background-color: #000;
+    padding: 0.125em 2.5em;
+}
+.blog .page-header,
+.home .page-header {
+    display: none;
+}
+.navigation-top {
+    background: #e1b401;
+    border-bottom: 1px solid #d2aa0a;
+    border-top: 1px solid #d2aa0a;
+}
+.menu-toggle {
+    color: #fff;
+}
+.dropdown-toggle {
+    padding: 0.375em 0.5em;
+}
+.main-navigation.toggled-on a {
+    color: #222;
+	padding: 0.313em 0;
+}
+.navigation-top a {
+    color: #fff;
+}
+
+.navigation-top .current-menu-item > a, 
+.navigation-top .current_page_item > a,
+.navigation-top .sub-menu .current-menu-item > a, 
+.navigation-top .sub-menu .current_page_item > a {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navigation-top .sub-menu .current-menu-item > a, 
+.navigation-top .sub-menu .current_page_item > a {
+    background-color: #b99d3c;
+}
+
+.navigation-top a:hover,
+.navigation-top a:focus,
+.navigation-top .current-menu-item > a:hover, 
+.navigation-top .current_page_item > a:hover {
+    color: #f9ecbc;
+}
+.single-post:not(.has-sidebar) #primary, 
+.page.page-one-column:not(.twentyseventeen-front-page) #primary, 
+.archive.page-one-column:not(.has-sidebar) .page-header, .archive.page-one-column:not(.has-sidebar) #primary {
+    max-width: initial;
+}
+
+.site-info {
+    font-size: 12px;
+    font-size: 0.75rem;
+}
+/* typography */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.75em;
+    padding: 0;
+}
+hr {
+    margin: 2em 0;
+}
+ul, ol {
+    margin: 0 0 1.5em 2em;
+    padding: 0;
+}
+
+/* featured image */
+.post-thumbnail a img { 
+	transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+.post-thumbnail a img:hover,
+.post-thumbnail a img:focus {
+	opacity: 1;  
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+.single-featured-image {
+    margin-bottom: 1em;
+}
+/* one or two column page */
+.archive.page-one-column .has-post-thumbnail .entry-title,
+.archive.page-two-column .has-post-thumbnail .entry-title {
+    margin-bottom: initial;
+}
+.archive.page-two-column .has-post-thumbnail .entry-content {
+	padding-top: initial;
+}
+.page-one-column .has-post-thumbnail .entry-title {
+    margin-bottom: 2em;
+}
+.page-two-column .has-post-thumbnail .entry-title {
+    margin-bottom: 2em;
+}
+.page-two-column .has-post-thumbnail .entry-content {
+    padding-top: 0;
+}
+
+/* Link Styles */
+.entry-content a, 
+.entry-summary a, 
+.widget a, 
+.site-footer .widget-area a, 
+.posts-navigation a, 
+.widget_authors a strong {
+	box-shadow: none;
+}
+
+.entry-content a:focus,
+.entry-content a:hover,
+.entry-summary a:focus,
+.entry-summary a:hover,
+.widget a:focus,
+.widget a:hover,
+.site-footer .widget-area a:focus,
+.site-footer .widget-area a:hover,
+.posts-navigation a:focus,
+.posts-navigation a:hover,
+.comment-metadata a:focus,
+.comment-metadata a:hover,
+.comment-metadata a.comment-edit-link:focus,
+.comment-metadata a.comment-edit-link:hover,
+.comment-reply-link:focus,
+.comment-reply-link:hover,
+.widget_authors a:focus strong,
+.widget_authors a:hover strong,
+.entry-title a:focus,
+.entry-title a:hover,
+.entry-meta a:focus,
+.entry-meta a:hover,
+.page-links a:focus .page-number,
+.page-links a:hover .page-number,
+.entry-footer a:focus,
+.entry-footer a:hover,
+.entry-footer .cat-links a:focus,
+.entry-footer .cat-links a:hover,
+.entry-footer .tags-links a:focus,
+.entry-footer .tags-links a:hover,
+.post-navigation a:focus,
+.post-navigation a:hover,
+.pagination a:not(.prev):not(.next):focus,
+.pagination a:not(.prev):not(.next):hover,
+.comments-pagination a:not(.prev):not(.next):focus,
+.comments-pagination a:not(.prev):not(.next):hover,
+.logged-in-as a:focus,
+.logged-in-as a:hover,
+a:focus .nav-title,
+a:hover .nav-title,
+.edit-link a:focus,
+.edit-link a:hover,
+.site-info a:focus,
+.site-info a:hover,
+.widget .widget-title a:focus,
+.widget .widget-title a:hover,
+.widget ul li a:focus,
+.widget ul li a:hover {
+	color: #000;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.entry-meta a,
+.colors-dark .entry-title a,
+.colors-dark .entry-content a, 
+.colors-dark .entry-summary a, 
+.colors-dark .widget a, 
+.colors-dark .site-footer 
+.widget-area a, 
+.colors-dark .posts-navigation a, 
+.colors-dark .widget_authors a strong,
+.colors-custom .entry-title a,
+.colors-custom .entry-content a, 
+.colors-custom .entry-summary a, 
+.colors-custom .widget a, 
+.colors-custom .site-footer 
+.widget-area a, 
+.colors-custom .posts-navigation a, 
+.colors-custom .widget_authors a strong {
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.entry-content .more-link:before {
+	display: inherit;
+}
+.more-link {
+    background-color: #e1b401;
+    padding: 0.438em 1.25em 0.375em;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    box-shadow: none;
+    letter-spacing: 1px;
+
+}
+.more-link:focus,
+.more-link:hover {
+    opacity: 0.85;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.featured-label {
+	margin-right: 0.813em;
+    color: #c3a12d;
+}
+h2.widget-title {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 0.063em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+}
+blockquote {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.375;
+}
+blockquote cite {
+	font-size: 12px;
+    font-size: 0.75em;
+    font-weight: 500;
+}
+.pagination, .comments-pagination {
+    padding: 1em 0;
+}
+/* social nav */
+.social-navigation a {
+    background-color: #e1b401;
+    color: #fff;
+}
+/* Widgets */
+.widget .tagcloud a, 
+.widget.widget_tag_cloud a, 
+.wp_widget_tag_cloud a {
+    padding: 3px 10px 4px !important;
+}
+
+/*--------------------------------------------------------------
+19.0 Media Queries
+--------------------------------------------------------------*/
+
+/* Adjust positioning of edit shortcuts, override style in customize-preview.css */
+@media screen and (min-width: 20em) {}
+
+@media screen and (min-width: 30em) {
+	.site-branding {
+		padding: 3em 0 2.25em;
+	}
+	body, button, input, select, textarea {
+		font-size: 17px;
+		font-size: 1.063rem;
+	}
+	.page-one-column .panel-content .wrap {
+		max-width: 1024px;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.site-header .navigation-top .menu-scroll-down {
+		color: #f9ecbc;
+	}
+	.site-title {
+		font-size: 32px;
+		font-size: 2rem;
+	}
+	.site-description {
+		font-size: 14px;
+		font-size: 0.875rem;
+	}
+	.wrap {
+		max-width: 1024px;
+	}
+	.navigation-top {
+		    bottom: 1px;
+	}
+/* 	.home .navigation-top {
+		bottom:0;
+	} */
+	.navigation-top .wrap {
+		padding: 0.5em 3.4166666666667em;
+	}
+	.navigation-top .wrap {
+		max-width: 1024px;
+	}
+	.main-navigation ul ul {
+		background: #e1b401;
+		border: 1px solid #e1b401;
+	}
+	.main-navigation li li.focus > a, 
+	.main-navigation li li:focus > a, 
+	.main-navigation li li:hover > a, 
+	.main-navigation li li a:hover, 
+	.main-navigation li li a:focus, 
+	.main-navigation li li.current_page_item a:hover, 
+	.main-navigation li li.current-menu-item a:hover, 
+	.main-navigation li li.current_page_item a:focus, 
+	.main-navigation li li.current-menu-item a:focus {
+		color: #fff;
+		background-color: #b99d3c;
+	}	
+	.main-navigation ul ul .menu-item-has-children > a > .icon, 
+	.main-navigation ul ul .page_item_has_children > a > .icon {
+		margin-top: -6px;
+	}
+
+	.main-navigation ul li.menu-item-has-children:before,
+	.main-navigation ul li.menu-item-has-children:after,
+	.main-navigation ul li.page_item_has_children:before,
+	.main-navigation ul li.page_item_has_children:after {
+		border:none;
+	}
+	.main-navigation ul ul a {
+		padding: 0.5em 1.25em;
+	}
+	/* content widths */
+	.has-sidebar:not(.error404) #primary {
+		width: 68%;
+	}
+	.has-sidebar #secondary {
+		width: 26%;
+	}
+	.panel-image {
+		max-height: 600px;
+	}
+	h2.widget-title {
+		font-size: 16px;
+		font-size: 1rem;
+	}
+	.page.page-one-column .entry-header, 
+	.twentyseventeen-front-page.page-one-column .entry-header, 
+	.archive.page-one-column:not(.has-sidebar) .page-header {
+		margin-bottom: 0;
+	}
+
+	.page-two-column .has-post-thumbnail .entry-content {
+		padding-top: 2.5rem;
+	}
+	.twentyseventeen-front-page.page-one-column .entry-header {
+		margin-bottom: 1.5em;
+	}
+	.page-two-column .panel-content .entry-content {
+		padding-top: 0;
+	}
+	.site-footer {
+		margin-top: 0;
+	}
+	
+	.prev.page-numbers:focus,
+	.prev.page-numbers:hover,
+	.next.page-numbers:focus,
+	.next.page-numbers:hover,	
+	.prev.page-numbers,
+	.next.page-numbers,
+	.pagination .prev, 
+	.pagination .next
+	.pagination .prev:hover, 
+	.pagination .next:hover	{
+		background-color: transparent;
+	}
+	.prev.page-numbers:focus,
+	.prev.page-numbers:hover,
+	.next.page-numbers:focus,
+	.next.page-numbers:hover {
+		color: inherit;
+	}	
+}
+
+@media screen and ( min-width: 67em ) {
+
+}
+
+@media screen and ( min-width: 79em ) {}
+
+@media screen and ( max-width: 48.875em ) and ( min-width: 48em ) {}
+
